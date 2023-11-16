@@ -1,10 +1,8 @@
 let count = 0;
 
 const decrement = () => {
-    if (count > 0) {
         count--;
         updateCount();
-    }
 }
 
 const increment = () => {
@@ -33,3 +31,17 @@ incrementButton.addEventListener("click", increment);
 resetButton.addEventListener("click", reset);
 
 document.addEventListener("DOMContentLoaded", updateCount);
+
+document.addEventListener("keydown", (event) => {
+    if (event.key === "+") {
+        increment();
+    };
+
+    if (event.key === "-") {
+        decrement();
+    };
+
+    if (event.key === "r") {
+        reset();
+    };
+});
