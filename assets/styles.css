@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --text-color: #f5f5f5;
+    --hover-color: #00C896;
+    --bg-color: #050115;
+    --secon-bg-color: #33313F;
+    --big-font: 2.5rem;
+    --normal-font: 2rem;
+    --neon-box-shadow: 0 0 .5rem #00c896;
+    --h2-font: 3rem;
+    --font-neon-text-shadow: 0 0 10px rgba(0, 200, 150,0.3),
+    0 0 20px rgba(70, 200, 150,0.3),
+    0 0 30px rgba(0, 200, 150,0.3),
+    0 0 40px rgba(0, 200, 150,0.3),
+    0 0 70px rgba(0, 200, 150,0.3),
+    0 0 80px rgba(0, 200, 150,0.3),
+    0 0 100px rgba(0, 200, 150,0.3),
+    0 0 150px rgba(0, 200, 150,0.3);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(45deg, #050115, #33313F);
+}
+
+.counter {
+    height: 280px;
+    min-width: 300px;
+    background: #f5f5f5;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 20px var(--hover-color);
+}
+
+.counter h2 {
+    font-size: 36px;
+    letter-spacing: 0.8px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px;
+
+}
+
+.btns .decrement,
+.btns .increment {
+    width: 50px;
+    border-radius: 50%;
+    font-size: 32px;
+}
+
+.btns .reset {
+    width: 100px;
+    font-size: 22px;
+    border-radius: 25px;
+    background: var(--hover-color);
+    text-transform: uppercase;
+    box-shadow: 0 0 10px var(--hover-color)
+}
+
+.btns .decrement,
+.btns .increment,
+.btns .reset {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    color: #f5f5f5;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btns .decrement{
+    background: #e82f2f;
+}
+
+.btns .increment {
+    background: #1ad254;
+}
+
