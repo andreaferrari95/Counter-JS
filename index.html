@@ -7,6 +7,23 @@
     <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
 </head>
 <body>
+
+    <div class="modal" id="instructionsModal">
+        <div class="instruction-content">
+            <h2>Counter Instructions</h2>
+                <p>Welcome to the counter! <br>You can use your mouse to click on the buttons or you can use your keyboard too!</p>
+                <p>Keyboard usage:</p>
+                <p>Use the following keys:</p>
+                <p><strong>+</strong> - Increment</p>
+                <p><strong>-</strong> - Decrement</p>
+                <p><strong>r</strong> - Reset</p>
+                <p><strong>i</strong> - Instructions</p>
+                <p class="margins"><strong>Enter</strong> - Close Congratulations message and continue</p>
+                <p class="margins enjoy">Enjoy counting!</p>
+                <button id="dismissInstructions">Dismiss</button>
+        </div>
+    </div>
+
     <div class="counter">
         <h2>Counter</h2>
         <div class="count">
@@ -26,6 +43,9 @@
         <button id="resetAfterCongrats">Reset</button>
     </div>
     </div>
+    
+    
+    <button id="recallInstructions" class="recall-instructions-btn">Instructions</button>
 
 
     <script src="assets/JavaScript/script.js" type="text/JavaScript"></script> 

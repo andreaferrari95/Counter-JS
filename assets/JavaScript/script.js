@@ -34,16 +34,32 @@ const updateCount = () => {
         const congratulationsImages = document.getElementById("congratulationsImages");
         congratulationsImages.src = congratsImage[count];
 
-        document.getElementById("continue").addEventListener("click", () => {
-            congratulationsModal.style.display = "none";
-        });
+        const continueButton = document.getElementById("continue");
+        const resetAfterCongratsButton = document.getElementById("resetAfterCongrats");
 
-        document.getElementById("resetAfterCongrats").addEventListener("click", () => {
+        const hideAndContinue = () => {
+            congratulationsModal.style.display = "none";
+        };
+
+        const resetAndHide = () => {
             reset();
             congratulationsModal.style.display = "none";
-        })
+        }
+
+        continueButton.addEventListener("click", hideAndContinue);
+        resetAfterCongratsButton.addEventListener("click", resetAndHide);
+
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Enter") {
+                hideAndContinue();
+            }
+
+            if (e.key === "r") {
+                resetAndHide();
+            }
+        });
     }
-}
+};
 
 const decrementButton = document.querySelector(".decrement");
 decrementButton.textContent = "-";
@@ -58,7 +74,30 @@ resetButton.addEventListener("click", reset);
 resetButton.textContent = "Reset";
 
 
-document.addEventListener("DOMContentLoaded", updateCount);
+document.addEventListener("DOMContentLoaded", () => {
+    const instructionsModal = document.getElementById("instructionsModal");
+    instructionsModal.style.display = "block";
+    updateCount();
+
+    const toggleInstructions = () => {
+        if (instructionsModal.style.display === "block") {
+            instructionsModal.style.display = "none";
+        } else {
+            instructionsModal.style.display = "block";
+        }
+    };
+
+    document.getElementById("dismissInstructions").addEventListener("click", toggleInstructions);
+
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "i") {
+            toggleInstructions();
+        }
+    });
+
+    document.getElementById("recallInstructions").addEventListener("click", toggleInstructions);
+});
+
 
 document.addEventListener("keydown", (event) => {
     if (event.key === "+") {
@@ -73,3 +112,4 @@ document.addEventListener("keydown", (event) => {
         reset();
     };
 });
+
