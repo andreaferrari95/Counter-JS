@@ -85,25 +85,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.getElementById("dismissInstructions").addEventListener("click", toggleInstructions);
 
-    document.addEventListener("keydown", (event) => {
-        if (event.key === "i") {
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "i") {
             toggleInstructions();
-        };
+        }
     });
 
     document.getElementById("recallInstructions").addEventListener("click", toggleInstructions);
 });
 
-document.addEventListener("keydown", (event) => {
-    if (event.key === "+") {
+document.addEventListener("keydown", (e) => {
+    if (e.key === "+") {
         increment();
     };
 
-    if (event.key === "-") {
+    if (e.key === "-") {
         decrement();
     };
 
-    if (event.key === "r") {
+    if (e.key === "r") {
         reset();
     };
 });
