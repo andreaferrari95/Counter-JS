@@ -19,20 +19,20 @@ const updateCount = () => {
     const countElement = document.querySelector(".count span");
     countElement.textContent = count;
 
-    const congratsImage = [
-        "/assets/img/congrats10.png",
-        "/assets/img/congrats25.png",
-        "/assets/img/congrats50.png",
-        "/assets/img/congrats100.png"
-    ];
+    const congratsImage = {
+        10: "/assets/img/congrats10.png",
+        25:"/assets/img/congrats25.png",
+        50: "/assets/img/congrats50.png",
+        100:"/assets/img/congrats100.png"
+    };
 
-    if (count === 10 || count === 25 || count === 50 || count === 100) {
 
+    if (congratsImage.hasOwnProperty(count)) {
         const congratulationsModal = document.getElementById("congratulationsModal");
         congratulationsModal.style.display = "block";
 
         const congratulationsImages = document.getElementById("congratulationsImages");
-        congratulationsImages.src = congratsImage[Math.log2(count) -1];
+        congratulationsImages.src = congratsImage[count];
 
         document.getElementById("continue").addEventListener("click", () => {
             congratulationsModal.style.display = "none";
