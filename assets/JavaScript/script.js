@@ -18,6 +18,31 @@ const reset = () => {
 const updateCount = () => {
     const countElement = document.querySelector(".count span");
     countElement.textContent = count;
+
+    const congratsImage = [
+        "/assets/img/congrats10.png",
+        "/assets/img/congrats25.png",
+        "/assets/img/congrats50.png",
+        "/assets/img/congrats100.png"
+    ];
+
+    if (count === 10 || count === 25 || count === 50 || count === 100) {
+
+        const congratulationsModal = document.getElementById("congratulationsModal");
+        congratulationsModal.style.display = "block";
+
+        const congratulationsImages = document.getElementById("congratulationsImages");
+        congratulationsImages.src = congratsImage[Math.log2(count) -1];
+
+        document.getElementById("continue").addEventListener("click", () => {
+            congratulationsModal.style.display = "none";
+        });
+
+        document.getElementById("resetAfterCongrats").addEventListener("click", () => {
+            reset();
+            congratulationsModal.style.display = "none";
+        })
+    }
 }
 
 const decrementButton = document.querySelector(".decrement");
