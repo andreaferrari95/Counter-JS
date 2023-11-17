@@ -3,18 +3,15 @@ let count = 0;
 const decrement = () => {
         count--;
         updateCount();
-}
-
+};
 const increment = () => {
     count++;
     updateCount();
-}
-
+};
 const reset = () => {
     count = 0;
     updateCount();
-}
-
+};
 const updateCount = () => {
     const countElement = document.querySelector(".count span");
     countElement.textContent = count;
@@ -25,7 +22,6 @@ const updateCount = () => {
         50: "/assets/img/congrats50.png",
         100:"/assets/img/congrats100.png"
     };
-
 
     if (congratsImage.hasOwnProperty(count)) {
         const congratulationsModal = document.getElementById("congratulationsModal");
@@ -44,7 +40,7 @@ const updateCount = () => {
         const resetAndHide = () => {
             reset();
             congratulationsModal.style.display = "none";
-        }
+        };
 
         continueButton.addEventListener("click", hideAndContinue);
         resetAfterCongratsButton.addEventListener("click", resetAndHide);
@@ -52,13 +48,13 @@ const updateCount = () => {
         document.addEventListener("keydown", (e) => {
             if (e.key === "Enter") {
                 hideAndContinue();
-            }
+            };
 
             if (e.key === "r") {
                 resetAndHide();
-            }
+            };
         });
-    }
+    };
 };
 
 const decrementButton = document.querySelector(".decrement");
@@ -84,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
             instructionsModal.style.display = "none";
         } else {
             instructionsModal.style.display = "block";
-        }
+        };
     };
 
     document.getElementById("dismissInstructions").addEventListener("click", toggleInstructions);
@@ -92,12 +88,11 @@ document.addEventListener("DOMContentLoaded", () => {
     document.addEventListener("keydown", (event) => {
         if (event.key === "i") {
             toggleInstructions();
-        }
+        };
     });
 
     document.getElementById("recallInstructions").addEventListener("click", toggleInstructions);
 });
-
 
 document.addEventListener("keydown", (event) => {
     if (event.key === "+") {
