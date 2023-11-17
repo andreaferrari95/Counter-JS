@@ -1,6 +1,5 @@
 <h1 align="center">
-    <a href="https://andreaferrari95.github.io/Counter-JS/">
-    <img src="./.github/assets/img/Screenshot.png">
+    <a href="https://andreaferrari95.github.io/Counter-JS/">Counter using JavaScript
     </a>
 </h1>
 
