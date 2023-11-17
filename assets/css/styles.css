@@ -27,6 +27,7 @@ body {
     justify-content: center;
     background:linear-gradient(45deg, #050115, #33313F);
 }
+/* counter styling --------------------------------------------------------------------*/
 .counter {
     height: 280px;
     min-width: 300px;
@@ -100,6 +101,7 @@ body {
 .btns .reset:active {
     opacity: .7;
 }
+/* congratulations message styling ------------------------------------------------------*/
 .modal {
     max-width:500px;
     display:none;
@@ -142,6 +144,7 @@ body {
 .buttons-container button:active {
     opacity: .7;
 }
+/* Instructions message styling ---------------------------------------------*/
 .instruction-content {
     color: var(--text-color);
 }
@@ -184,6 +187,7 @@ body {
 #dismissInstructions:active{
     opacity: .7;
 }
+/* Instructions button styling ----------------------------------------*/
 #recallInstructions {
     display: flex;
     justify-content: center;
