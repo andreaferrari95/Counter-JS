@@ -20,18 +20,30 @@ Welcome to the Counter Application! This simple JavaScript-based web application
 - **Increment:** Increase the counter value by one.
 - **Decrement:** Decrease the counter value by one.
 - **Reset:** Set the counter value back to zero.
+- **Full keyboard usability** All buttons can be triggered using keyboard inputs.
 
-Additionally, the application features a congratulatory message with customizable images when specific count milestones (10, 25, 50, and 100) are reached. Users can continue counting or reset the counter from the congratulatory modal.
+Additionally, the application features:
+An instructions card appears as soon as the page is loaded, once discarded, it can be recalled from the instructions button or the "i" key;
+A congratulatory message with customized images when specific count milestones (10, 25, 50, and 100) are reached. Users can continue counting or reset the counter from the congratulatory modal.
 
 ## Instructions
 
-- Use the "+" and "-" buttons to increment and decrement the counter.
-- Press the "r" key to reset the counter.
+- Use the "+" and "-" buttons or "+" and "-" keys to increment and decrement the counter.
+- Press the "RESET" button or the "r" key to reset the counter.
 - Congratulations messages with images will appear at counts 10, 25, 50, and 100.
-- The "Recall Instructions" button at the bottom right allows users to view instructions at any time.
-- The "Enter" key or "i" key can be used to close the instructions modal or recall it.
+- Congratulation messages can be closed by clicking on "CONTINUE" or pressing the "Enter" key (if you want to continue counting, if you want to close the message and reset the counter you can click on "RESET" or press the "r" key.
+- The "Instructions" button at the bottom right allows users to view instructions at any time by clicking on it or pressing the "i" key.
 
 ## Getting Started
+
+<h3> Open 
+    <a href="https://andreaferrari95.github.io/Counter-JS/">Counter JS
+    </a> on your preferred browser
+</h3>
+
+Start counting and enjoy the application!
+
+## Contributing
 
 1. Clone the repository:
 
@@ -41,6 +53,5 @@ Additionally, the application features a congratulatory message with customizabl
 
 2. Open `index.html` in your preferred web browser.
 
-3. Start counting and enjoy the application!
 
 Feel free to explore, modify, and enhance the Counter Application as needed. If you have any suggestions or improvements, we welcome contributions and feedback.
