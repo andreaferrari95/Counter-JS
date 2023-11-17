@@ -51,7 +51,8 @@ Start counting and enjoy the application!
    git clone https://github.com/andreaferrari95/Counter-JS.git
    ```
 
-2. Open `index.html` in your preferred web browser.
+2. Feel free to update it and enhance **Counter JS** as you like.
 
+3. Push for review.
 
-Feel free to explore, modify, and enhance the Counter Application as needed. If you have any suggestions or improvements, we welcome contributions and feedback.
+HAVE FUN! PEACE!
