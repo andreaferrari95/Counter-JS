@@ -21,14 +21,17 @@ const updateCount = () => {
 }
 
 const decrementButton = document.querySelector(".decrement");
-const incrementButton = document.querySelector(".increment");
-const resetButton = document.querySelector(".reset");
-
+decrementButton.textContent = "-";
 decrementButton.addEventListener("click", decrement);
 
+const incrementButton = document.querySelector(".increment");
 incrementButton.addEventListener("click", increment);
+incrementButton.textContent = "+";
 
+const resetButton = document.querySelector(".reset");
 resetButton.addEventListener("click", reset);
+resetButton.textContent = "Reset";
+
 
 document.addEventListener("DOMContentLoaded", updateCount);
 
