@@ -4,12 +4,12 @@
 </h1>
 
 <p align="center">
-  <i align="center">Instantly generate production-ready Node.js backend apps 🚀</i>
+  <i align="center">Try it now and have some fun!🚀</i>
 </p>
 
 <h4 align="center">
-  <a href="https://github.com/amplication/amplication/actions/workflows/ci.yml">
-    <img src="https://img.shields.io/github/actions/workflow/status/amplication/amplication/ci.yml?branch=master&label=pipeline&style=flat-square" alt="continuous integration" style="height: 20px;">
+  <a href="https://github.com/andreaferrari95/Counter-JS/tree/main">
+    <img src="https://raw.githubusercontent.com/andreaferrari95/Counter-JS/main/assets/img/Screenshot.png" alt="Screenshot of the counter" style="height: 20px;">
   </a>
   <a href="https://github.com/amplication/amplication/graphs/contributors">
     <img src="https://img.shields.io/github/contributors-anon/amplication/amplication?color=yellow&style=flat-square" alt="contributors" style="height: 20px;">
