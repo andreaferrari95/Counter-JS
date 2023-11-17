@@ -2,9 +2,6 @@
     <a href="https://andreaferrari95.github.io/Counter-JS/">
     <img src="./.github/assets/img/Screenshot.png">
     </a>
-    <a href="https://amplication.com/#gh-dark-mode-only">
-    <img src="./.github/assets/amplication-logo-dark-mode.svg">
-    </a>
 </h1>
 
 <p align="center">
