@@ -145,6 +145,14 @@ body {
     opacity: .7;
 }
 /* Instructions message styling ---------------------------------------------*/
+#instructionsModal {
+    width: 100vh;
+    margin: 4rem auto;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .instruction-content {
     color: var(--text-color);
 }
@@ -207,4 +215,12 @@ body {
     position: fixed;
     bottom: 20px;
     right: 20px;
+}
+
+
+@media (max-width: 450px) {
+    #instructionsModal {
+        width: 80%; 
+        margin: 5rem auto;
+    }
 }
