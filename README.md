@@ -1,5 +1,5 @@
 <h1 align="center">
-    <a href="https://andreaferrari95.github.io/Counter-JS/">Counter using JavaScript
+    <a href="https://counter-js-andrea-ferrari.netlify.app/">Counter using JavaScript
     </a>
 </h1>
 
@@ -37,7 +37,7 @@ A congratulatory message with customized images when specific count milestones (
 ## Getting Started
 
 <h3> Open 
-    <a href="https://andreaferrari95.github.io/Counter-JS/">Counter JS
+    <a href="https://counter-js-andrea-ferrari.netlify.app/">Counter JS
     </a> on your preferred browser
 </h3>
 
