@@ -160,7 +160,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
     color: var(--hover-color);
@@ -175,7 +175,7 @@ body {
 }
 .instruction-content .enjoy {
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
  #dismissInstructions{
     display: flex;
