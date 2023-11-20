@@ -217,14 +217,12 @@ body {
     right: 20px;
 }
 
-
-@media (max-width: 450px) {
+@media (max-width: 500px) {
     #instructionsModal {
         width: 80%; 
         margin: 5rem auto;
         margin-top: 2rem;
     }
-
     .instruction-content {
         max-height: 600px;
     }
