@@ -18,9 +18,9 @@ const updateCount = () => {
 
     const congratsImage = {
         10: "/assets/img/congrats10.png",
-        25:"/assets/img/congrats25.png",
+        25: "/assets/img/congrats25.png",
         50: "/assets/img/congrats50.png",
-        100:"/assets/img/congrats100.png"
+        100: "/assets/img/congrats100.png"
     };
 
     if (congratsImage.hasOwnProperty(count)) {
