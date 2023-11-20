@@ -160,14 +160,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
     color: var(--hover-color);
     text-transform: uppercase;
 }
 .instruction-content p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-left: 1.5rem;
 }
 .instruction-content .margins {
@@ -222,5 +222,16 @@ body {
     #instructionsModal {
         width: 80%; 
         margin: 5rem auto;
+        margin-top: 2rem;
+    }
+
+    .instruction-content {
+        max-height: 600px;
+    }
+    .instruction-content h2 {
+        font-size: 1.5rem;
+    }
+    .instruction-content .margins {
+        margin-bottom: 1rem;
     }
 }
