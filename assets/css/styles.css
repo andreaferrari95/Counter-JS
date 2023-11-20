@@ -227,9 +227,12 @@ body {
         max-height: 700px;
     }
     .instruction-content h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     .instruction-content .margins {
         margin-bottom: 1rem;
+    }
+    .instruction-content p {
+        font-size: 1rem;
     }
 }
